@@ -124,6 +124,7 @@ form {
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
+    height: 70vh;
   }
   .container-info {
     display: none;
