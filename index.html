@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <form id="color-form">
+        <input
+          type="color"
+          id="colorPicker"
+          class="color-picker"
+          value="#ff0000"
+        />
+        <select id="color-combination" class="color-combination">
+          <option value="monochrome">Monochrome</option>
+          <option value="analogic">Analogous</option>
+          <option value="complement">Complementary</option>
+          <option value="triad">Triadic</option>
+          <option value="quad">Quadratic</option>
+        </select>
+        <button type="submit" class="submit-btn">Get color scheme</button>
+      </form>
+    </div>
+    <div class="container" id="color-container">
+      <div class="color-box color1" id="color1">#3b82f6</div>
+      <div class="color-box color2" id="color2">#f97316</div>
+      <div class="color-box color3" id="color3">#2b283a</div>
+      <div class="color-box color4" id="color4">#a626d3</div>
+      <div class="color-box color5" id="color5">#aad1b6</div>
+    </div>
+    <div class="container-info" id="container-info">
+      <div class="color-info" id="color-info-1">#3b82f6</div>
+      <div class="color-info" id="color-info-2">#f97316</div>
+      <div class="color-info" id="color-info-3">#2b283a</div>
+      <div class="color-info" id="color-info-4">#a626d3</div>
+      <div class="color-info" id="color-info-5">#aad1b6</div>
+    </div>
+
+    <script src="script.js" type="module" defer></script>
+  </body>
+</html>
