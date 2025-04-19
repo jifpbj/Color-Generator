@@ -53,7 +53,6 @@ colorContainer.addEventListener("click", function (event) {
 infoContainer.addEventListener("click", function (event) {
   const target = event.target;
   if (target.classList.contains("color-info")) {
-    const colorId = target.id;
     const colorValue = target.innerText;
     navigator.clipboard.writeText(colorValue).then(() => {
       alert(`Color ${colorValue} copied to clipboard!`);
